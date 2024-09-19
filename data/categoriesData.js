@@ -16,7 +16,7 @@ window.categories = [
   },
   {
     "Name": "City breaks",
-    "Slug": "city",
+    "Slug": "city-breaks",
     "Collection ID": "6668539da54c192408dbe935",
     "Locale ID": "6662c27ac45e3d69210f9884",
     "Item ID": "66685558f68137eb05cd5f92",

@@ -1,32 +1,40 @@
 const categoriesContainer = document.querySelector(".collection-list-4")
+const categoriesHeading = document.querySelector("#categories-heading")
+const underline = document.querySelector("#categories-heading-underline")
 
 const data = window.categories
-console.log(data)
+if (!data) {
+  categoriesHeading.textContent = "No posts to show"
+  underline.style.display = "none"
+} else {
+  underline.style.display = "block"
+  categoriesHeading.textContent = "Categories"
 
-data.forEach(cat => {
-  const newDiv = document.createElement("div")
-  newDiv.role = "listitem"
-  newDiv.className = "categories-card w-dyn-item"
+  data.forEach(cat => {
+    const newDiv = document.createElement("div")
+    newDiv.role = "listitem"
+    newDiv.className = "categories-card w-dyn-item"
 
-  const image = cat.Icon
-  const name = cat.Name
-  const url = `/detail_category.html#${cat.Slug}`
+    const image = cat.Icon
+    const name = cat.Name
+    const url = `/detail_category.html#${cat.Slug}`
 
-  // Add data to new div for each item in list
-  newDiv.innerHTML = `<a
-                data-w-id="c9b5fd87-1170-9703-04bf-362489eedafa"
-                href="${url}"
-                class="categories-card-link-block w-inline-block">
-                <div class="div">
-                  <img
-                    src="${image}"
-                    loading="lazy"
-                    alt=""
-                    class="categories-card-image#" />
-                </div>
-                <div class="categories-card-content-container">
-                  <h1 class="categories-card-headline">${name}</h1>
-                </div>
-              </a>`
-              categoriesContainer.appendChild(newDiv)
-});
+    // Add data to new div for each item in list
+    newDiv.innerHTML = `<a
+    data-w-id="c9b5fd87-1170-9703-04bf-362489eedafa"
+    href="${url}"
+    class="categories-card-link-block w-inline-block">
+    <div class="div">
+    <img
+    src="${image}"
+    loading="lazy"
+    alt=""
+    class="categories-card-image" />
+    </div>
+    <div class="categories-card-content-container">
+    <h1 class="categories-card-headline">${name}</h1>
+    </div>
+    </a>`
+    categoriesContainer.appendChild(newDiv)
+  });
+}

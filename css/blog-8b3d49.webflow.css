@@ -178,7 +178,8 @@ img {
   top: 25%;
 }
 
-.text-span, .text-span-2 {
+.text-span,
+.text-span-2 {
   color: var(--red-text);
 }
 
@@ -213,6 +214,10 @@ img {
 
 .categories-heading:hover {
   opacity: .5;
+}
+
+#categories-heading-underline {
+  display: none;
 }
 
 .categories-menu-div {
@@ -562,7 +567,6 @@ img {
 }
 
 .heading-section {
-  background-image: url('../images/new-about-me-hero-min.jpg');
   background-position: 50%;
   background-size: cover;
   justify-content: center;
@@ -609,10 +613,6 @@ img {
   overflow: hidden;
 }
 
-.categories-card:hover {
-  transform: translate(0, -5px);
-}
-
 .collection-list-4 {
   grid-column-gap: 60px;
   grid-row-gap: 60px;
@@ -632,10 +632,20 @@ img {
   display: flex;
   position: relative;
   overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .categories-card-link-block:hover {
   transform: translate(0);
+}
+
+.categories-card-image {
+  transition: all 0.2s ease-in-out;
+}
+
+.categories-card-link-block:hover .categories-card-image {
+  transform: scale(1.1);
 }
 
 .categories-card-headline {
@@ -1167,7 +1177,10 @@ img {
   font-style: italic;
 }
 
-.div-block-8, .div-block-9, .div-block-10, .div-block-11 {
+.div-block-8,
+.div-block-9,
+.div-block-10,
+.div-block-11 {
   flex-flow: column;
   align-items: center;
   display: flex;
@@ -1401,7 +1414,8 @@ img {
     margin-bottom: 0;
   }
 
-  .about-me-image-div, .about-me-content-container-2 {
+  .about-me-image-div,
+  .about-me-content-container-2 {
     margin-bottom: 60px;
   }
 
@@ -1583,7 +1597,8 @@ img {
     display: block;
   }
 
-  .heading-section, .heading-section.categories {
+  .heading-section,
+  .heading-section.categories {
     height: 300px;
   }
 
@@ -1612,7 +1627,9 @@ img {
     max-width: none;
   }
 
-  .categories-card-content-container, .categories-card-image, .div {
+  .categories-card-content-container,
+  .categories-card-image,
+  .div {
     width: 100%;
   }
 
@@ -1855,7 +1872,8 @@ img {
     padding-right: 0;
   }
 
-  .main-section.about, .main-section.contact-section {
+  .main-section.about,
+  .main-section.contact-section {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -1880,7 +1898,8 @@ img {
     margin-right: -5px;
   }
 
-  .link-block, .heading-section-container {
+  .link-block,
+  .heading-section-container {
     width: 100%;
   }
 
@@ -1937,7 +1956,8 @@ img {
     margin-bottom: 30px;
   }
 
-  .about-me-image-div, .about-me-content-container-2 {
+  .about-me-image-div,
+  .about-me-content-container-2 {
     margin-bottom: 30px;
   }
 
@@ -1971,6 +1991,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Lora';
   src: url('../fonts/Lora-Bold.ttf') format('truetype');
@@ -1978,6 +1999,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Lora';
   src: url('../fonts/Lora-SemiBold.ttf') format('truetype');
@@ -1985,6 +2007,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Lora';
   src: url('../fonts/Lora-MediumItalic.ttf') format('truetype');
@@ -1992,6 +2015,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Lora';
   src: url('../fonts/Lora-Regular.ttf') format('truetype');
@@ -1999,6 +2023,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Lora';
   src: url('../fonts/Lora-BoldItalic.ttf') format('truetype');
@@ -2006,6 +2031,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Lora';
   src: url('../fonts/Lora-SemiBoldItalic.ttf') format('truetype');
@@ -2013,6 +2039,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Lora';
   src: url('../fonts/Lora-Medium.ttf') format('truetype');
@@ -2020,6 +2047,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Oxygen';
   src: url('../fonts/Oxygen-Light.ttf') format('truetype');
@@ -2027,6 +2055,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Oxygen';
   src: url('../fonts/Oxygen-Regular.ttf') format('truetype');
@@ -2034,6 +2063,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Oxygen';
   src: url('../fonts/Oxygen-Bold.ttf') format('truetype');
@@ -2041,6 +2071,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Condensed';
   src: url('../fonts/Cabin_Condensed-Regular.ttf') format('truetype');
@@ -2048,6 +2079,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Condensed';
   src: url('../fonts/Cabin_Condensed-MediumItalic.ttf') format('truetype');
@@ -2055,6 +2087,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Condensed';
   src: url('../fonts/Cabin_Condensed-Bold.ttf') format('truetype');
@@ -2062,6 +2095,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin';
   src: url('../fonts/Cabin-SemiBold.ttf') format('truetype');
@@ -2069,6 +2103,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Semicondensed';
   src: url('../fonts/Cabin_SemiCondensed-SemiBold.ttf') format('truetype');
@@ -2076,6 +2111,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Condensed';
   src: url('../fonts/Cabin_Condensed-BoldItalic.ttf') format('truetype');
@@ -2083,6 +2119,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Condensed';
   src: url('../fonts/Cabin_Condensed-SemiBoldItalic.ttf') format('truetype');
@@ -2090,6 +2127,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Condensed';
   src: url('../fonts/Cabin_Condensed-Italic.ttf') format('truetype');
@@ -2097,6 +2135,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Condensed';
   src: url('../fonts/Cabin_Condensed-Medium.ttf') format('truetype');
@@ -2104,6 +2143,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Semicondensed';
   src: url('../fonts/Cabin_SemiCondensed-Italic.ttf') format('truetype');
@@ -2111,6 +2151,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Condensed';
   src: url('../fonts/Cabin_Condensed-SemiBold.ttf') format('truetype');
@@ -2118,6 +2159,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Semicondensed';
   src: url('../fonts/Cabin_SemiCondensed-Medium.ttf') format('truetype');
@@ -2125,6 +2167,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin';
   src: url('../fonts/Cabin-Bold.ttf') format('truetype');
@@ -2132,6 +2175,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin';
   src: url('../fonts/Cabin-Italic.ttf') format('truetype');
@@ -2139,6 +2183,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin';
   src: url('../fonts/Cabin-SemiBoldItalic.ttf') format('truetype');
@@ -2146,6 +2191,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Semicondensed';
   src: url('../fonts/Cabin_SemiCondensed-SemiBoldItalic.ttf') format('truetype');
@@ -2153,6 +2199,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin';
   src: url('../fonts/Cabin-Medium.ttf') format('truetype');
@@ -2160,6 +2207,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin';
   src: url('../fonts/Cabin-BoldItalic.ttf') format('truetype');
@@ -2167,6 +2215,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Semicondensed';
   src: url('../fonts/Cabin_SemiCondensed-Regular.ttf') format('truetype');
@@ -2174,6 +2223,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Semicondensed';
   src: url('../fonts/Cabin_SemiCondensed-Bold.ttf') format('truetype');
@@ -2181,6 +2231,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin';
   src: url('../fonts/Cabin-Regular.ttf') format('truetype');
@@ -2188,6 +2239,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin';
   src: url('../fonts/Cabin-MediumItalic.ttf') format('truetype');
@@ -2195,6 +2247,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Semicondensed';
   src: url('../fonts/Cabin_SemiCondensed-MediumItalic.ttf') format('truetype');
@@ -2202,6 +2255,7 @@ img {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Cabin Semicondensed';
   src: url('../fonts/Cabin_SemiCondensed-BoldItalic.ttf') format('truetype');
