@@ -1764,6 +1764,10 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+  .hero-section {
+    background-image: url('../images/new-home-here-small.jpg');
+  }
+  
   .navbar {
     padding-left: 20px;
     padding-right: 20px;
